@@ -22,10 +22,10 @@ func sorteioNumero() {
 		return
 	}
 
-	if num1 == num2 {
-		fmt.Println("Parabens, voce acertou")
-	} else {
+	if num1 != num2 {
 		fmt.Println("Que pena, voce errou, continue tentando")
 		sorteioNumero()
+	} else {
+		fmt.Println("Parabens, voce acertou")
 	}
 }
